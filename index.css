@@ -1,0 +1,164 @@
+body{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    text-align: center;
+    padding: 1.5rem 0;
+    /* filter: brightness(40%); */
+    background-image: url("./sobreimage/first\ image\ background.jpg");
+    background-repeat: no-repeat;
+    background-color: rgb(112, 111, 111);
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.empty{
+    height: 5rem;
+}
+header h1{
+    color: white;
+    line-height: 2.5rem;
+    padding:  0rem 1rem;
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header button{
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    transition-delay: 0.1s;
+    cursor: pointer;
+    background-color: white;
+    color: rgba(25, 25, 25, .7);
+    border-radius: 5%;
+    border: none;
+}
+header button:hover{
+    background-color:rgba(25, 25, 25, .5) ;
+    color: white;
+}
+.general-1{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+}
+.grid{
+    background-color: rgb(255, 249, 249);
+    padding: 5rem 0 0rem 0;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    /* overflow-x: hidden; */
+}
+.grid-1{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.grid-1:hover{
+    opacity: 1;
+    transform: scale(1.1,1);
+    transition-duration: 1.2s;
+    transition-timing-function: ease-in;
+   
+}
+.grid img{
+    /* border: 1px solid red; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, .5);
+}
+.grid h4{
+    margin-bottom: 6rem;
+}
+.gen-features{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    
+}
+.features h3{
+    width: 70%;
+    margin: auto;
+    padding: 0 0 3rem 0;
+    color: rgb(100, 96, 96);
+}
+.buyers{
+    background-color: rgb(255, 249, 249);
+    text-align: center;
+    padding: 2rem 0;
+}
+.buyers h1{
+    padding-bottom: 2rem;
+}
+.testimonies img{
+    margin-bottom: 3rem;
+    max-width: 100%;
+    width: 90%;
+}
+
+
+@media screen and (min-width: 700px) {
+    .empty{
+        height: 0;
+    }
+    header{
+        height: 100vh;
+    }
+    .grid{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .features{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        /* align-items: stretch; */
+        gap: 1rem;
+    }
+    .fast{
+        flex: 25%;
+    }
+    .multiple{
+        flex: 25%;
+    }
+    .responsive{
+        flex: 25%;
+    }
+    .videos{
+        flex: 25%;
+    }
+    .contact{
+        flex: 25%;
+    }
+    .red{
+        flex: 25%;
+    }
+    .testimonies{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .testimonies img{
+        flex: 30%;
+    }
+    .change{
+        height: 20rem;
+    }
+   
+}
